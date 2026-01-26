@@ -39,6 +39,8 @@ Products were ranked by both units sold and total revenue to compare volume-driv
 ### Business Interpretation
 Volume-driven products may be effective for customer acquisition or bundling strategies, while value-driven products represent critical revenue contributors but also introduce concentration risk.
 
+### Additional Insight – Revenue vs Volume Leaders
+The top products by revenue differ entirely from the top products by sales volume. Revenue is mostly concentrated in a small number of high-priced products.
 
 ## Files Structure
 *(optional)*
