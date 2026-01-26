@@ -18,9 +18,28 @@ thelook_ecommerce (BigQuery public dataset)
 - Excel
 
 ## Key Insights
-*(filled later)*
+Product Analysis – Value vs Volume
+
+### Business Question
+Which products drive revenue, and which products drive sales volume?
+
+### Metrics
+- Units sold: count of rows in `order_items` (each row represents one sold unit)
+- Revenue: sum of `order_items.sale_price`
+
+### Approach
+Order-level data was aggregated at the product level by joining `order_items` with `products`. 
+Products were ranked by both units sold and total revenue to compare volume-driven and value-driven performance.
+
+### Key Findings
+- High-volume products tend to generate relatively lower revenue per unit.
+- Revenue is driven by a smaller number of high-priced, low-volume products.
+- This indicates a clear trade-off between volume drivers and value drivers.
+
+### Business Interpretation
+Volume-driven products may be effective for customer acquisition or bundling strategies, while value-driven products represent critical revenue contributors but also introduce concentration risk.
+
 
 ## Files Structure
 *(optional)*
-
 
