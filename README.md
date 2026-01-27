@@ -18,7 +18,11 @@ thelook_ecommerce (BigQuery public dataset)
 - Excel
 
 ## Key Insights
-Product Analysis – Value vs Volume
+"The insights below are derived from step-by-step analysis of markets, products, and customers and will be expanded as additional sections are completed."
+
+### Market Performance (2023–2024)
+### Product Analysis – Value vs Volume
+The insights below are derived from step-by-step analysis of markets, products, and customers and will be expanded as additional sections are completed.
 
 ### Business Question
 Which products drive revenue, and which products drive sales volume?
@@ -37,10 +41,13 @@ Products were ranked by both units sold and total revenue to compare volume-driv
 - This indicates a clear trade-off between volume drivers and value drivers.
 
 ### Business Interpretation
-Volume-driven products may be effective for customer acquisition or bundling strategies, while value-driven products represent critical revenue contributors but also introduce concentration risk.
+Volume-driven products may be effective for customer acquisition or bundling strategies, while value-driven products represent the main contributors to total revenue.
+
 
 ### Additional Insight – Revenue vs Volume Leaders
 The top products by revenue differ entirely from the top products by sales volume. Revenue is mostly concentrated in a small number of high-priced products.
+
+### Customer Growth & Quality
 
 ## Files Structure
 *(optional)*
