@@ -21,6 +21,32 @@ thelook_ecommerce (BigQuery public dataset)
 "The insights below are derived from step-by-step analysis of markets, products, and customers and will be expanded as additional sections are completed."
 
 ### Market Performance (2023–2024)
+#### Business Question
+How did key markets perform in 2023–2024 in terms of revenue, order volume, and average order value (AOV)?
+
+#### Markets Analyzed
+- China
+- United States
+- South Korea
+- Brazil
+
+#### Metrics
+- Orders: count of distinct orders
+- Revenue: total sales value
+- AOV (Average Order Value): revenue divided by number of orders
+
+#### Approach
+Data from 2023 and 2024 was aggregated at the country level. 
+For each market, total revenue, number of orders, and AOV were calculated and compared across years to identify differences in market size and customer purchasing behavior.
+
+#### Key Findings
+- China and the United States generated the highest total revenue in both 2023 and 2024 and these two markets also recorded the highest number of orders, indicating large market scale.
+- South Korea consistently showed the highest average order value (AOV), despite having significantly fewer orders.
+- Brazil showed steady growth in revenue and order volume, with relatively stable AOV across both years.
+
+#### Interpretation
+China and the United States represent large-scale markets driven by high transaction volume, while South Korea appears to be a higher-value market where customers place fewer but more expensive orders. This suggests differences in purchasing behavior across markets rather than uniform growth patterns.
+
 ### Product Analysis – Value vs Volume
 The insights below are derived from step-by-step analysis of markets, products, and customers and will be expanded as additional sections are completed.
 
