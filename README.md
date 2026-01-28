@@ -143,5 +143,16 @@ This helps evaluate whether growth is sustainable or driven mainly by one-time b
 ---
 
 ## Files Structure
-*(optional)*
+
+```text
+├── README.md
+├── sql/
+│   ├── day_1_market_performance.sql
+│   ├── day_2_product_value_vs_volume.sql
+│   └── day_3_customer_growth_quality.sql
+├── visuals/
+│   ├── power_bi_dashboards/
+│   └── excel_charts/
+└── notes/
+
 
