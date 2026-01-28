@@ -75,35 +75,66 @@ The top products by revenue differ entirely from the top products by sales volum
 
 ### Customer Growth & Quality
 
-Business question
+# 📊 Day 3 – Customer Growth & Quality
 
-How is our customer base changing over time, and are customers coming back after their first purchase?
+## Business Question
+**How is our customer base changing over time, and are customers coming back after their first purchase?**
 
-Definitions
+The goal of this analysis is to understand:
+- how many **new customers** the company acquires over time
+- whether customers **return and place additional orders**
 
-Customer: unique user identified by orders.user_id
+---
 
-New customer: user placing their first order
+## Dataset
+- **thelook_ecommerce** (BigQuery public dataset)
+- **Table used:** `orders`
 
-Returning customer: user placing subsequent orders
+---
 
-Analysis
-1. Customer Growth
+## Definitions
 
-Customer growth is measured as the number of customers placing their first order over time.
-This shows how many new customers the business acquires in each period.
+### Customer
+A **customer** is defined as a unique user identified by `orders.user_id`.
 
-2. Customer Quality
+### New Customer
+A **new customer** is a user placing their **first-ever order**.
 
-Customer quality is measured by repeat behavior.
-Customers with two or more orders are considered repeat customers.
-The repeat customer rate indicates how well the business retains customers after their first purchase.
+### Returning Customer
+A **returning customer** is a user placing **any subsequent order after their first purchase**.
 
-Key Insight
+---
 
-Customer growth alone can be misleading.
-A healthy business requires not only acquiring new customers, but also retaining them.
-High customer quality (repeat behavior) is more important for long-term sustainability than short-term growth spikes.
+## Analysis
+
+### 1. Customer Growth
+Customer growth is measured as the number of customers placing their **first order** over time.
+
+This metric shows how many **new customers** the business acquires in each period and is based on the date of the first order per customer.
+
+---
+
+### 2. Customer Quality
+Customer quality is measured using **repeat behavior**.
+
+Customers who place **two or more orders** are considered repeat customers.  
+The **repeat customer rate** shows what share of customers return after their first purchase.
+
+This helps evaluate whether growth is sustainable or driven mainly by one-time buyers.
+
+---
+
+## Key Insights
+- Customer growth alone does not guarantee a healthy business.
+- A high number of first-time buyers can still result in poor performance if customers do not return.
+- **Customer quality (repeat behavior) is more important for long-term business sustainability than short-term growth spikes.**
+
+---
+
+## Summary
+- **Customer growth** answers *how many new customers we acquire*.
+- **Customer quality** answers
+
 
 ## Files Structure
 *(optional)*
