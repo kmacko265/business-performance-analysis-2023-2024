@@ -20,7 +20,7 @@ thelook_ecommerce (BigQuery public dataset)
 ## Key Insights
 "The insights below are derived from step-by-step analysis of markets, products, and customers and will be expanded as additional sections are completed."
 
-### Market Performance (2023–2024)
+### 1. Market Performance (2023–2024)
 #### Business Question
 How did key markets perform in 2023–2024 in terms of revenue, order volume, and average order value (AOV)?
 
@@ -47,7 +47,7 @@ For each market, total revenue, number of orders, and AOV were calculated and co
 #### Interpretation
 China and the United States represent large-scale markets driven by high transaction volume, while South Korea appears to be a higher-value market where customers place fewer but more expensive orders. This suggests differences in purchasing behavior across markets rather than uniform growth patterns.
 
-### Product Analysis – Value vs Volume
+### 2. Product Analysis – Value vs Volume
 The insights below are derived from step-by-step analysis of markets, products, and customers and will be expanded as additional sections are completed.
 
 ### Business Question
@@ -75,7 +75,7 @@ The top products by revenue differ entirely from the top products by sales volum
 
 ### Customer Growth & Quality
 
-# 📊 Day 3 – Customer Growth & Quality
+# 3. Customer Growth & Quality
 
 ## Business Question
 **How is our customer base changing over time, and are customers coming back after their first purchase?**
