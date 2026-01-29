@@ -1,15 +1,23 @@
 # Market, Product & Customer Performance Analysis (2023–2024)
 
 ## Project Overview
-This project analyzes business performance across key markets, products, and customer segments using transactional data from 2023–2024.  
-The goal is to identify growth patterns, value drivers, and potential risk areas by combining SQL-based analysis with business-oriented insights and visualizations.
+This project analyzes business performance across markets, products, and customers using transactional e-commerce data from 2023–2024.
+
+The main goal is to understand:
+- how revenue is generated,
+- which markets and products perform best,
+- and what factors primarily drive revenue performance.
+
+The analysis combines **SQL-based data exploration** with **business-oriented interpretation**.  
+The project is designed as a **learning-focused junior portfolio project**, with room for deeper understanding over time.
 
 ---
 
 ## Business Questions
-1. Market performance (2023–2024)
-2. Product value vs. volume
-3. Customer growth & quality
+- How did key markets perform in 2023–2024?
+- Which products drive revenue through value vs. volume?
+- How is the customer base evolving, and do customers return?
+- Is revenue driven more by order volume or by average order value (AOV)?
 
 ---
 
@@ -25,134 +33,101 @@ The goal is to identify growth patterns, value drivers, and potential risk areas
 
 ---
 
-## Key Insights
-> *The insights below are derived from step-by-step analysis of markets, products, and customers and will be expanded as additional sections are completed.*
+## Core Metrics
+The following metrics are used consistently throughout the analysis:
+- **Orders** – count of distinct orders  
+- **Revenue** – sum of `order_items.sale_price`  
+- **AOV (Average Order Value)** – revenue divided by number of orders  
 
 ---
 
-## 1. Market Performance (2023–2024)
+## Market Performance (2023–2024)
 
 ### Business Question
 How did key markets perform in 2023–2024 in terms of revenue, order volume, and average order value (AOV)?
 
 ### Markets Analyzed
-- China
-- United States
-- South Korea
-- Brazil
-
-### Metrics
-- **Orders:** count of distinct orders  
-- **Revenue:** total sales value  
-- **AOV (Average Order Value):** revenue divided by number of orders  
+- China  
+- United States  
+- South Korea  
+- Brazil  
 
 ### Approach
-Data from 2023 and 2024 was aggregated at the country level.  
-For each market, total revenue, number of orders, and AOV were calculated and compared across years to identify differences in market size and customer purchasing behavior.
+Transactional data from 2023 and 2024 was aggregated at the country level.  
+For each market, total revenue, number of orders, and AOV were calculated and compared across years to identify differences in market size and purchasing behavior.
 
 ### Key Findings
-- China and the United States generated the highest total revenue in both 2023 and 2024 and these two markets also recorded the highest number of orders, indicating large market scale.
-- South Korea consistently showed the highest average order value (AOV), despite having significantly fewer orders.
-- Brazil showed steady growth in revenue and order volume, with relatively stable AOV across both years.
+- China and the United States generated the highest total revenue in both years, driven mainly by high order volume.
+- South Korea consistently showed the highest AOV despite having fewer orders.
+- Brazil showed steady growth in revenue and order volume with relatively stable AOV.
 
 ### Interpretation
-China and the United States represent large-scale markets driven by high transaction volume, while South Korea appears to be a higher-value market where customers place fewer but more expensive orders. This suggests differences in purchasing behavior across markets rather than uniform growth patterns.
+China and the United States represent large, volume-driven markets, while South Korea appears to be a higher-value market where customers place fewer but more expensive orders.  
+This highlights meaningful differences in purchasing behavior across markets.
 
 ---
 
-## 2. Product Analysis – Value vs Volume
+## Product Analysis – Value vs. Volume
 
 ### Business Question
 Which products drive revenue, and which products drive sales volume?
 
 ### Metrics
-- **Units sold:** count of rows in `order_items` (each row represents one sold unit)
-- **Revenue:** sum of `order_items.sale_price`
+- **Units sold** – count of rows in `order_items`  
+- **Revenue** – sum of `order_items.sale_price`
 
 ### Approach
 Order-level data was aggregated at the product level by joining `order_items` with `products`.  
 Products were ranked by both units sold and total revenue to compare volume-driven and value-driven performance.
 
 ### Key Findings
-- High-volume products tend to generate relatively lower revenue per unit.
-- Revenue is driven by a smaller number of high-priced, low-volume products.
-- This indicates a clear trade-off between volume drivers and value drivers.
+- High-volume products tend to generate lower revenue per unit.
+- A smaller number of high-priced products drive a large share of total revenue.
+- Top products by revenue differ significantly from top products by sales volume.
 
 ### Business Interpretation
-Volume-driven products may be effective for customer acquisition or bundling strategies, while value-driven products represent the main contributors to total revenue.
-
-### Additional Insight – Revenue vs Volume Leaders
-The top products by revenue differ entirely from the top products by sales volume. Revenue is mostly concentrated in a small number of high-priced products.
+Volume-driven products may support customer acquisition and visibility, while value-driven products are the primary contributors to overall revenue.
 
 ---
 
-## 3. Customer Growth & Quality
+## Revenue Drivers – Volume vs. Value
 
 ### Business Question
-**How is our customer base changing over time, and are customers coming back after their first purchase?**
+Is revenue primarily driven by order volume or by average order value across markets?
 
-The goal of this analysis is to understand:
-- how many **new customers** the company acquires over time
-- whether customers **return and place additional orders**
-
----
-
-### Definitions
-
-#### Customer
-A **customer** is defined as a unique user identified by `orders.user_id`.
-
-#### New Customer
-A **new customer** is a user placing their **first-ever order**.
-
-#### Returning Customer
-A **returning customer** is a user placing **any subsequent order after their first purchase**.
-
----
-
-### Analysis
-
-#### 1. Customer Growth
-Customer growth is measured as the number of customers placing their **first order** over time.
-
-This metric shows how many **new customers** the business acquires in each period and is based on the date of the first order per customer.
-
----
-
-#### 2. Customer Quality
-Customer quality is measured using **repeat behavior**.
-
-Customers who place **two or more orders** are considered repeat customers.  
-The **repeat customer rate** shows what share of customers return after their first purchase.
-
-This helps evaluate whether growth is sustainable or driven mainly by one-time buyers.
-
----
+### Approach
+Revenue, number of orders, and AOV were analyzed together at the country level to understand whether market performance is driven more by:
+- a high number of transactions, or
+- higher spending per order.
 
 ### Key Insights
-- Customer growth alone does not guarantee a healthy business.
-- A high number of first-time buyers can still result in poor performance if customers do not return.
-- **Customer quality (repeat behavior) is more important for long-term business sustainability than short-term growth spikes.**
+- Some markets achieve high revenue mainly through large order volume.
+- Other markets generate comparable revenue with fewer orders but higher AOV.
+- Revenue performance should always be evaluated using both volume and value metrics together.
 
 ---
 
-### Summary
-- **Customer growth** answers *how many new customers we acquire*.
-- **Customer quality** answers
+## Customer Growth & Repeat Behavior (Exploratory)
+
+### Business Question
+How is the customer base changing over time, and do customers return after their first purchase?
+
+### Definitions
+- **Customer** – unique user identified by `orders.user_id`
+- **New customer** – user placing their first-ever order
+- **Returning customer** – user placing at least one additional order after the first purchase
+
+### Analysis
+Customer growth was measured by identifying users placing their first order over time.  
+Customer quality was explored using repeat purchasing behavior, focusing on customers with two or more orders.
+
+### Key Insights
+- Customer growth alone does not guarantee long-term business health.
+- Repeat purchasing behavior is an important indicator of customer quality.
+- A business driven only by first-time buyers may face sustainability risks.
+
+> This section is exploratory and provides a high-level view without advanced retention or cohort modeling.
 
 ---
 
-## Files Structure
-
-```text
-├── README.md
-├── sql/
-│   ├── day_1_market_performance.sql
-│   ├── day_2_product_value_vs_volume.sql
-│   └── day_3_customer_growth_quality.sql
-├── visuals/
-│   ├── power_bi_dashboards/
-│   └── excel_charts/
-└── notes/
-
-
+## File Structure
