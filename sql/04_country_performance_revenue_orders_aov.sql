@@ -1,3 +1,11 @@
+-- Business question:
+-- Which countries generate the highest revenue, and how do the number of orders and average order value (AOV) compare across countries?
+
+-- Description:
+-- This query aggregates e-commerce data at the country level to calculate total revenue,distinct order count, and average order value (AOV).
+-- Results are sorted by revenue to identify the most valuable markets.
+
+
 SELECT
   u.country,
   ROUND(SUM(oi.sale_price),2) AS revenue,
