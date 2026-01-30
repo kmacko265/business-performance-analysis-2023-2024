@@ -47,7 +47,7 @@ The following metrics are used consistently throughout the analysis:
 How did key markets perform in 2023–2024 in terms of revenue, order volume, and average order value (AOV)?
 
 **Visualization:**  
-![Revenue by Country](visuals/power_bi/revenue_by_country_2023_2024.png)
+![Revenue by Country](visuals/revenue_by_country_2023_2024.png)
 
 ### Markets Analyzed
 - China  
@@ -76,7 +76,7 @@ This highlights meaningful differences in purchasing behavior across markets.
 Which products drive revenue, and which products drive sales volume?
 
 **Visualization:**  
-![Product Value vs Volume](visuals/power_bi/product_value_vs_volume.png)
+![Product Value vs Volume](visuals/product_value_vs_volume.png)
 
 ### Metrics
 - **Units sold** – count of rows in `order_items`  
@@ -102,7 +102,7 @@ Volume-driven products may support customer acquisition and visibility, while va
 Is revenue primarily driven by order volume or by average order value across markets?
 
 **Visualization:**  
-![Revenue Drivers – Order Volume vs AOV](visuals/power_bi/revenue_drivers_order_volume_vs_aov.png)
+![Revenue Drivers – Order Volume vs AOV](visuals/revenue_drivers_order_volume_vs_aov.png)
 
 ### Approach
 Revenue, number of orders, and AOV were analyzed together at the country level to understand whether market performance is driven more by:
