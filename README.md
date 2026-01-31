@@ -3,7 +3,7 @@
 ## Project Overview
 This project analyzes business performance across markets, products, and customers using transactional e-commerce data from 2023–2024.
 
-##This project exists to support stakeholder decision-making by analyzing business performance across markets, products, and customer segments using transactional e-commerce data from 2023–2024.
+## This project exists to support stakeholder decision-making by analyzing business performance across markets, products, and customer segments using transactional e-commerce data from 2023–2024.
 
 The main goal is to understand:
 - how revenue is generated,
