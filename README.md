@@ -1,9 +1,9 @@
 # Market, Product & Customer Performance Analysis (2023–2024)
 
 ## Project Overview
-This project analyzes business performance across markets, products, and customers using transactional e-commerce data from 2023–2024.
+This project analyzes business performance across markets, products, and customer segments using transactional e-commerce data from 2023–2024. The analysis is designed to support stakeholder decision-making by identifying growth patterns, value drivers, and differences in purchasing behavior across markets.
 
-Project exists to support stakeholder decision-making by analyzing business performance across markets, products, and customer segments using transactional e-commerce data from 2023–2024.
+This project is designed as a learning-focused junior portfolio project, with an emphasis on clear business questions, correct metric usage, and interpretable insights.
 
 ## TL;DR – Final Insights
 👉 [Jump to Final Insights](#final-insights)
@@ -14,7 +14,6 @@ The main goal is to understand:
 - and what factors primarily drive revenue performance.
 
 The analysis combines **SQL-based data exploration** with **business-oriented interpretation**.  
-The project is designed as a **learning-focused junior portfolio project**, with room for deeper understanding over time.
 
 ---
 
@@ -144,7 +143,27 @@ Customer quality was explored using repeat purchasing behavior, focusing on cust
 
 ---
 
-# Final insights
-The analysis shows that markets and products are driven by different mechanisms: some primarily by order volume and others by order value. While volume-driven products can support customer acquisition, value-driven products are the main contributors to overall revenue. As a result, revenue performance should always be evaluated using volume and value metrics together rather than in isolation.
+## Final Insights
+
+- Business performance varies significantly across markets, with revenue driven by different mechanisms such as high order volume in some regions and higher average order value in others.
+- High sales volume does not necessarily translate into high revenue, as a smaller number of higher-priced products often contribute disproportionately to overall sales value.
+- Volume-driven products can support customer acquisition and activity, while value-driven products are the primary drivers of revenue performance.
+- Customer growth alone is not a sufficient indicator of long-term business health; repeat purchasing behavior provides additional insight into customer quality and sustainability.
+- Overall, revenue performance should be evaluated using both volume-based and value-based metrics together rather than relying on a single indicator.
+
 
 ## File Structure
+
+business-performance-analysis-2023-2024/
+├── README.md
+├── sql/
+│   ├── 01_market_performance.sql
+│   ├── 02_products_value_vs_volume.sql
+│   ├── 03_customer_growth_quality.sql
+│   └── 04_country_performance_revenue_orders_aov.sql
+└── visuals/
+    ├── revenue_by_country_2023_2024.png
+    ├── product_value_vs_volume.png
+    └── revenue_drivers_order_volume_vs_aov.png
+
+
