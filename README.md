@@ -5,6 +5,9 @@ This project analyzes business performance across markets, products, and custome
 
 Project exists to support stakeholder decision-making by analyzing business performance across markets, products, and customer segments using transactional e-commerce data from 2023–2024.
 
+## TL;DR – Final Insights
+👉 [Jump to Final Insights](#final-insights)
+
 The main goal is to understand:
 - how revenue is generated,
 - which markets and products perform best,
