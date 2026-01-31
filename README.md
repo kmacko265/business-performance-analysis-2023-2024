@@ -141,4 +141,7 @@ Customer quality was explored using repeat purchasing behavior, focusing on cust
 
 ---
 
+# Final insights
+The analysis shows that markets and products are driven by different mechanisms: some primarily by order volume and others by order value. While volume-driven products can support customer acquisition, value-driven products are the main contributors to overall revenue. As a result, revenue performance should always be evaluated using volume and value metrics together rather than in isolation.
+
 ## File Structure
